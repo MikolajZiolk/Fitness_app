@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PO_Project.CardioExercise" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAEAAAAEAAAAEAAACBAAAAAAAAAAQA=</HashCode>
+      <FileName>CardioExercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PO_Project.Exercise" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAABAAAAAQAAEAAAAAAAAAAAAACAAAAAAAAAAAQA=</HashCode>
+      <FileName>Exercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PO_Project.GymExercise" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMAAAAGAAAABAAACAABAAAAAQAAAA=</HashCode>
+      <FileName>GymExercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PO_Project.ListOfUsers" Collapsed="true">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAACAAAAAAAAAEAAAAAAAAAAAAAAMAwAEAAAAAABA=</HashCode>
+      <FileName>ListOfUsers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PO_Project.Program" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PO_Project.Training" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAwAEAAMAAAAAAAABIAQAAQAAAAAAAQA=</HashCode>
+      <FileName>Training.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PO_Project.User" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAIAAABAAAAASEgIAAgAQAADAEAAIwQAAACAAARBg=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PO_Project.UsersRanking" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAIAABAAAAA=</HashCode>
+      <FileName>UsersRanking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PO_Project.UserTrainings" Collapsed="true">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAQAEAAQAQGAAAAAAAAEAIBABAAABAAAAAAAQA=</HashCode>
+      <FileName>UserTrainings.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PO_Project.WrongData" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WrongData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Exception" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PO_Project.ITrainingManagement" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ITrainingManagement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PO_Project.IUserTrainingManagement" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUserTrainingManagement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PO_Project.EnumType" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Training.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PO_Project.EnumGender" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

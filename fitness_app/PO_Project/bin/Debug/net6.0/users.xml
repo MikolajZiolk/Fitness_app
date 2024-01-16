@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListOfUsers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Users>
+    <User>
+      <Name>Andrzej</Name>
+      <LastName>Przybysz</LastName>
+      <Nick>andprz</Nick>
+      <UserTrainings>
+        <Trainings />
+      </UserTrainings>
+      <Weight>70</Weight>
+      <Height>1.8</Height>
+      <Gender>Male</Gender>
+      <Password>Andr</Password>
+      <Login>Andrzej</Login>
+    </User>
+    <User>
+      <Name>Karol</Name>
+      <LastName>Przybysz</LastName>
+      <Nick>karprz</Nick>
+      <UserTrainings>
+        <Trainings />
+      </UserTrainings>
+      <Weight>70</Weight>
+      <Height>1.8</Height>
+      <Gender>Male</Gender>
+      <Password>Karo</Password>
+      <Login>Karol</Login>
+    </User>
+  </Users>
+</ListOfUsers>

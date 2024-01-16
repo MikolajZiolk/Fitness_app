@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GUI_PO_Project</name>
+    </assembly>
+    <members>
+        <member name="T:GUI_PO_Project.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:GUI_PO_Project.MainWindow">
+            <summary>
+            Klasa MainWindow reprezentuje główne okno aplikacji.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GUI_PO_Project.MainWindow.#ctor" -->
+        <member name="P:GUI_PO_Project.MainWindow.SelectedUserNameLabel">
+            <summary>
+            Właściwość do przechowywania i aktualizacji etykiety z nazwą aktualnie wybranego użytkownika.
+            </summary>
+        </member>
+        <member name="F:GUI_PO_Project.MainWindow.SelectedUserNameLabelProperty">
+            <summary>
+            Właściwość DependencyProperty reprezentująca etykietę z nazwą aktualnie wybranego użytkownika.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.UpdateUIHandler">
+            <summary>
+            Metoda obsługująca aktualizację interfejsu użytkownika.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.PlaySound">
+            <summary>
+            Metoda obsługująca odtwarzanie dźwięku.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnSounds_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługująca kliknięcie przycisku dźwięku. Symuluje operacje na innym wątku, a następnie aktualizuje interfejs i odtwarza dźwięk.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.ResetInputFields">
+            <summary>
+            Metoda resetuje pola wprowadzania danych w interfejsie użytkownika do wartości domyślnych.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.Timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie Tick timera, aktualizując etykiety czasu i daty co sekundę.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnAdd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku Dodaj nowego użytkownika.
+            Tworzy nowego użytkownika i dodaje go do listy zarejestrowanych użytkowników.
+            </summary>
+        </member>
+        <member name="P:GUI_PO_Project.MainWindow.IsDarkTheme">
+            <summary>
+            Pobiera lub ustawia wartość określającą, czy aplikacja korzysta z motywu ciemnego.
+            </summary>
+        </member>
+        <member name="F:GUI_PO_Project.MainWindow.paletteHelper">
+            <summary>
+            Obiekt pomocniczy do obsługi palety kolorów aplikacji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.toggleThem2(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku zmiany motywu aplikacji (jasny/ciemny).
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnexit2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku zamknięcia aplikacji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie przesunięcia okna za pomocą lewego przycisku myszy.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnSort_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku sortowania listy użytkowników.
+            Sortuje listę użytkowników alfabetycznie według nazwiska.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku usuwania zaznaczonych użytkowników.
+            Usuwa zaznaczonych użytkowników z listy zarejestrowanych użytkowników.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GUI_PO_Project.MainWindow.btnAddCardioTraining_Click(System.Object,System.Windows.RoutedEventArgs)" -->
+        <member name="M:GUI_PO_Project.MainWindow.btnAddGymTraining_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku dodawania treningu siłowego.
+            Dodaje nowy trening siłowy do zaznaczonego użytkownika.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.AllTrainingsBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku wyświetlającego treningi wszystkich zaznaczonych użytkowników.
+            Wyświetla okno dialogowe z listą treningów dla wybranych użytkowników.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.StatisticsBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku wyświetlającego statystyki zaznaczonych użytkowników.
+            Wyświetla okno dialogowe z statystykami BMI i całkowitym progresem dla wybranych użytkowników.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnRanking_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku wyświetlającego ranking zaznaczonych użytkowników.
+            Wyświetla okno dialogowe z rankingiem postępów użytkowników.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.btnSaveFIle_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku zapisu treningów zaznaczonego użytkownika do pliku.
+            Zapisuje treningi użytkownika do pliku tekstowego na pulpicie.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.lstUsers_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Obsługuje zdarzenie zmiany zaznaczenia użytkownika na liście, aktualizując etykietę z nazwą użytkownika.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GUI_PO_Project.RegisterWindow">
+            <summary>
+            Klasa RegisterWindow reprezentuje okno rejestracji użytkownika.
+            </summary>
+            <summary>
+            RegisterWindow
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.#ctor">
+            <summary>
+            Konstruktor domyślny inicjalizuje nowe okno rejestracji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.#ctor(PO_Project.User)">
+            <summary>
+            Konstruktor parametryczny inicjalizuje nowe okno rejestracji z podanym użytkownikiem.
+            </summary>
+            <param name="us"></param>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.btnZapisz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku "Zapisz". Sprawdza poprawność wprowadzonych danych i zamyka okno rejestracji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.GetSelectedGender">
+            <summary>
+            Metoda pobiera wybraną płeć z RadioButtonów.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.btnExit22_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku "Zamknij".
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.RegisterWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GUI_PO_Project.StartWindow">
+            <summary>
+            Klasa StartWindow reprezentuje okno aplikacji służące do logowania.
+            </summary>
+            <summary>
+            StartWindow
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.#ctor">
+            <summary>
+            Konstruktor inicjalizuje nowe wystąpienie klasy <see cref="T:GUI_PO_Project.StartWindow"/>.
+            </summary>
+        </member>
+        <member name="P:GUI_PO_Project.StartWindow.IsDarkTheme">
+            <summary>
+            Właściwość pobiera lub ustawia wartość określającą, czy aplikacja korzysta z motywu ciemnego.
+            </summary>
+        </member>
+        <member name="F:GUI_PO_Project.StartWindow.paletteHelper">
+            <summary>
+            Obiekt pomocniczy do obsługi palety kolorów aplikacji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.toggleTheme(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku do zmiany kolorów aplikacji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.exitApp(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku do wyłączenia aplikacji.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie przesunięcia okna za pomocą lewego przycisku myszy.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.LoginBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda obsługuje zdarzenie kliknięcia przycisku do logowania.
+            </summary>
+        </member>
+        <member name="M:GUI_PO_Project.StartWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bJ+eoRs+AtjGUz59yjqyTBvk+RI08GvPYqBIGWFVdV1u9SKVyGJdP/7KVWsWPp9KIAzsO+vjsr92cdyec4nqYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mikol\\OneDrive\\Desktop\\ostateczny\\GUI_PO_Project\\GUI_PO_Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mikol\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\mikol\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\mikol\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

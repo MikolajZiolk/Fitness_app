@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PO_Project</name>
+    </assembly>
+    <members>
+        <member name="F:PO_Project.CardioExercise.time">
+            <summary>
+            Klasa CardioExercise dziedziczy po klasie Exercise i reprezentuje ćwiczenie kardio.
+            Przechowuje informacje o czasie trwania ćwiczenia (w minutach) oraz odległości pokonanej podczas ćwiczenia (w kilometrach). 
+            </summary>
+        </member>
+        <member name="P:PO_Project.CardioExercise.Time">
+            <summary>
+            Właściwość pobiera lub ustawia czas trwania ćwiczenia(w minutach), czas musi być większy niż 0 i nie większy niż 1000 minut.
+            </summary>
+        </member>
+        <member name="P:PO_Project.CardioExercise.Distance">
+            <summary>
+            Właściwość pobiera lub ustawia odległość pokonaną podczas ćwiczenia(w kilometrach), odległość musi być większa niż 0 i nie większa niż 1000 kilometrów.
+            </summary>
+        </member>
+        <member name="M:PO_Project.CardioExercise.#ctor(System.String,System.Int32,System.Double,PO_Project.User)">
+            <summary>
+            Konstruktor parametryczny, inicjalizuje ćwiczenie kardio z określoną nazwą, czasem trwania, odległością, oraz użytkownikiem.
+            </summary>
+            <param name="exerciseName"></param>
+            <param name="time"></param>
+            <param name="distance"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:PO_Project.CardioExercise.MeanPace(System.Int32,System.Double)">
+            <summary>
+            Metoda MeanPace oblicza średnie tempo treningu na podstawie jego czasu trwania i przebytej odległości.
+            </summary>
+            <param name="time"></param>
+            <param name="distance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.CardioExercise.CalculateCaloriesBurned(System.Double,System.Double,PO_Project.User)">
+            <summary>
+            Metoda oblicza liczbę spalonych kalorii podczas ćwiczenia kardio, uwzględniając przy tym płeć użytkownika, wartość MET i wagę użytkownika.
+            </summary>
+            <param name="timeInMinutes"></param>
+            <param name="distanceInKilometers"></param>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.CardioExercise.ExerciseScore">
+            <summary>
+            Przesłonięta metoda, oblicza wynik ćwiczenia kardio na podstawie odległości, czasu trwania i ilości spalonych kalorii.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.CardioExercise.ToString">
+            <summary>
+            Przesłonięta metoda ToString, informację o ćwiczeniu kardio: nazwę ćwiczenia, czas trwania, odległość, średnie tempo, ilość spalonych kalorii oraz wynik ćwiczenia.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.Exercise.exerciseName">
+            <summary>
+            Abstrakcyjna klasa reprezentuje pojedyncze ćwiczenie, przechowując informacje o nazwie ćwiczenia oraz użytkowniku, który je wykonał.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Exercise.ExerciseName">
+            <summary>
+            Właściwość pobiera lub ustawia nazwę ćwiczenia, nazwa musi zawierać tylko litery i mieć co najmniej 3 znaki.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Exercise.User">
+            <summary>
+            Właściwość pobiera lub ustawia użytkownika, który wykonał ćwiczenie.
+            </summary>
+        </member>
+        <member name="M:PO_Project.Exercise.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, tworzy obiekt ćwiczenia.
+            </summary>
+        </member>
+        <member name="M:PO_Project.Exercise.ExerciseScore">
+            <summary>
+             Metoda wirtualna, oblicza wynik ćwiczenia. Domyślnie zwraca 1, jest przesłaniana w klasach dziedziczących.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.Exercise.#ctor(System.String,PO_Project.User)">
+            <summary>
+            Konstruktor parametryczny, inicjalizuje ćwiczenie z określoną nazwą i użytkownikiem.
+            </summary>
+            <param name="exerciseName"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:PO_Project.Exercise.ToString">
+            <summary>
+            Przesłonięta metoda ToString, zwraca nazwę ćwiczenia.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.GymExercise.kilograms">
+            <summary>
+            Klasa GymExercise dziedziczy po klasie Exercise i reprezentuje ćwiczenie wykonywane na siłowni. 
+            Przechowuje informacje o ilości kilogramów, liczbie powtórzeń (reps) oraz liczbie serii (sets).
+            </summary>
+        </member>
+        <member name="P:PO_Project.GymExercise.Kilograms">
+            <summary>
+            Właściwość pobiera lub ustawia ilość kilogramów użytych podczas ćwiczenia, ilość kilogramów musi być większa niż 0 i nie większa niż 500.
+            </summary>
+        </member>
+        <member name="P:PO_Project.GymExercise.Reps">
+            <summary>
+            Właściwość pobiera lub ustawia liczbę powtórzeń podczas ćwiczenia, liczba powtórzeń musi być większa niż 0 i nie większa niż 500.
+            </summary>
+        </member>
+        <member name="P:PO_Project.GymExercise.Sets">
+            <summary>
+            Właściwość pobiera lub ustawia liczbę serii podczas ćwiczenia, liczba serii musi być większa niż 0 i nie większa niż 300.
+            </summary>
+        </member>
+        <member name="M:PO_Project.GymExercise.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, tworzy obiekt ćwiczenia na siłowni.
+            </summary>
+        </member>
+        <member name="M:PO_Project.GymExercise.#ctor(System.String,System.Int32,System.Int32,System.Int32,PO_Project.User)">
+            <summary>
+            Konstruktor parametryczny, inicjalizuje ćwiczenie na siłowni z określoną nazwą, ilością kilogramów, liczbą powtórzeń, liczbą serii oraz użytkownikiem.
+            </summary>
+            <param name="exerciseName"></param>
+            <param name="kilograms"></param>
+            <param name="reps"></param>
+            <param name="sets"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:PO_Project.GymExercise.ExerciseScore">
+            <summary>
+            Przesłonięta metoda, oblicza wynik ćwiczenia na siłowni, uwzględniając różne wagi dla kilogramów, liczby powtórzeń i liczby serii.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.GymExercise.ToString">
+            <summary>
+            Przesłonięta metoda ToString, zwraca informację o ćwiczeniu na siłowni: nazwę ćwiczenia, ilość kilogramów, liczbę powtórzeń, liczbę serii oraz wynik ćwiczenia.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PO_Project.ITrainingManagement">
+            <summary>
+            Interfejs ITrainingManagement definiuje metody związane z dodawaniem ćwiczeń do treningu . 
+            </summary>
+        </member>
+        <member name="T:PO_Project.IUserTrainingManagement">
+            <summary>
+            Interfejs IUserTrainingManagement definiuje metody związane z zarządzaniem treningami użytkownika: dodawanie i usuwanie treningów użytkownika.
+            </summary>
+        </member>
+        <member name="P:PO_Project.ListOfUsers.Users">
+            <summary>
+            Właściwość pobiera lub ustawia listę użytkowników. 
+            </summary>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, inicjalizuje nowy obiekt ListOfUsers z pustą listą użytkowników.
+            </summary>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.RegisterUser(PO_Project.User)">
+            <summary>
+            Metoda dodaje nowego użytkownika do listy.
+            </summary>
+            <param name="newUser"></param>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.GenerateNickname(PO_Project.User)">
+            <summary>
+            Metoda GenerateNickname generuje unikalny nick dla podanego użytkownika, korzystając z metody GenerateNickname z klasy User.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.SortUsers">
+            <summary>
+            Metoda sortuje listę użytkowników.
+            </summary>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.DeleteUsers(PO_Project.User)">
+            <summary>
+            Metoda usuwa użytkownika z listy.
+            </summary>
+            <param name="us"></param>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.ToString">
+            <summary>
+            Metoda zwraca reprezentację tekstową listy użytkowników.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.ZapiszXML(System.String)">
+            <summary>
+            Metoda zapisuje obiekt ListOfUsers do pliku XML.
+            </summary>
+            <param name="nazwa"></param>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.OdczytXml(System.String)">
+            <summary>
+            Metoda odczytuje obiekt ListOfUsers z pliku XML.
+            </summary>
+            <param name="nazwa"></param>
+            <returns>Nowy obiekt ListOfUsers odczytany z pliku XML.</returns>
+        </member>
+        <member name="M:PO_Project.ListOfUsers.Clone">
+            <summary>
+            Metoda klonuje obiekt ListOfUsers (klonowanie głębokie).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.Training.user">
+            <summary>
+            Klasa Training reprezentuje sesję treningową, zawierając informacje o użytkowniku, dacie treningu, typie treningu oraz liście ćwiczeń wykonanych podczas tego treningu.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Training.User">
+            <summary>
+            Właściwość pobiera lub ustawia użytkownika powiązanego z treningiem.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Training.TrainingDate">
+            <summary>
+            Właściwość pobiera lub ustawia datę treningu, która ma się mieścić w zakresie od 1 stycznia 1999 roku do aktualnej daty.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Training.Type">
+            <summary>
+            Właściwość pobiera lub ustawia typ treningu.
+            </summary>
+        </member>
+        <member name="P:PO_Project.Training.Exercises">
+            <summary>
+            Właściwość pobiera lub ustawia listę ćwiczeń związanych z treningiem.
+            </summary>
+        </member>
+        <member name="M:PO_Project.Training.#ctor">
+            <summary>
+            Konstruktor nieparametryczny inicjalizujący listę ćwiczeń.
+            </summary>
+        </member>
+        <member name="M:PO_Project.Training.#ctor(PO_Project.User,System.DateTime,PO_Project.EnumType)">
+            <summary>
+            Konstruktor przyjmujący użytkownika, datę treningu i rodzaj treningu, inicjalizujący również listę ćwiczeń.
+            </summary>
+            <param name="user"></param>
+            <param name="trainingDate"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:PO_Project.Training.AddExerciseCardio(PO_Project.CardioExercise)">
+            <summary>
+            Metoda AddExerciseCardio dodaje ćwiczenie cardio do listy ćwiczeń treningu.
+            </summary>
+            <param name="exercise"></param>
+        </member>
+        <member name="M:PO_Project.Training.AddExerciseGym(PO_Project.GymExercise)">
+            <summary>
+            Metoda AddExerciseGym dodaje ćwiczenie siłowe do listy ćwiczeń treningu.
+            </summary>
+            <param name="exercise"></param>
+        </member>
+        <member name="M:PO_Project.Training.ToString">
+            <summary>
+            Przesłonięta metoda ToString, wypisuje informacje o treningu: datę, rodzaj treningu i informacje o ćwiczeniach.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.User.name">
+            <summary>
+            Klasa User reprezentuje użytkownika, przechowując jego dane: imię, nazwisko, nick, wagę, wzrost, płeć oraz unikalny nick. 
+            Jest tu także lista, która zachowuje używane nicki. 
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.Name">
+            <summary>
+            Właściwość pobiera lub ustawia imię użytkownika, imię musi zawierać tylko litery i mieć co najmniej 3 znaki.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.LastName">
+            <summary>
+            Właściwość pobiera lub ustawia nazwisko użytkownika, nazwisko musi zawierać tylko litery i mieć co najmniej 3 znaki.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.Nick">
+            <summary>
+            Właściwość pobiera lub ustawia nick użytkownika.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.UserTrainings">
+            <summary>
+            Właściwość pobiera lub ustawia listę treningów użytkownika.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.Weight">
+            <summary>
+            Właściwość pobiera lub ustawia wagę użytkownika, waga musi mieścić się w zakresie od 30 do 300 kg.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.Height">
+            <summary>
+            Właściwość pobiera lub ustawia wzrost użytkownika, wzrost musi mieścić się w zakresie od 1.0 do 2.5 metra.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.Gender">
+            <summary>
+            Właściwość pobiera lub ustawia płeć użytkownika.
+            </summary>
+        </member>
+        <member name="P:PO_Project.User.UsedNicks">
+            <summary>
+            Właściwość pobiera lub ustawia listę używanych nicków.
+            </summary>
+        </member>
+        <member name="M:PO_Project.User.GenerateNickname">
+            <summary>
+            Metoda GenerateNickname generuje każdemu użytkownikowi unikalny nick - bierze 3 pierwsze litery imienia oraz 3 pierwsze litery nazwiska użytkownika. 
+            Jeśli już istnieje osoba z takim nickiem, dodaje na koniec nicku kolejny numer. 
+            Po wygenerowaniu unikalnego nicku dodaje go do listy UsedNicks. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, tworzy obiekt użytkownika.
+            </summary>
+        </member>
+        <member name="M:PO_Project.User.#ctor(System.String,System.String,System.Double,System.Double,PO_Project.EnumGender)">
+            <summary>
+            Konstruktor parametryczny dodaje użytkownika do listy Users, każdemu użytkownikowi generuje unikalny nick oraz dodaje ten nick do listy używanych nicków.
+            </summary>
+            <param name="name"></param>
+            <param name="lastName"></param>
+            <param name="weight"></param>
+            <param name="height"></param>
+            <param name="gender"></param>
+        </member>
+        <member name="M:PO_Project.User.BMI(System.Double,System.Double)">
+            <summary>
+            Metoda BMI oblicza BMI użytkownika. 
+            </summary>
+            <param name="weight"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.TotalScore">
+            <summary>
+            Metoda oblicza całkowity wynik postępów użytkownika w treningach.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.TotalCaloriesBurned">
+            <summary>
+            Metoda oblicza całkowitą ilość spalonych kalorii przez użytkownika.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.ToString">
+            <summary>
+            Metoda wypisuje dane użytkownika - jego imię, nazwisko oraz nick. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.CompareTo(PO_Project.User)">
+            <summary>
+            Implementacja metody porównującej użytkowników na podstawie nazwiska i imienia.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.Clone">
+            <summary>
+            Implementacja metody klonującej obiekt użytkownika.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.User.Equals(PO_Project.User)">
+            <summary>
+            Implementacja metody sprawdzającej równość użytkowników na podstawie nicku.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.UsersRanking.ranking">
+            <summary>
+            Klasa reprezentuje ranking użytkowników na podstawie ich treningów. 
+            </summary>
+        </member>
+        <member name="P:PO_Project.UsersRanking.Ranking">
+            <summary>
+            Właściwość pobiera lub ustawia listę obiektów UserTrainings. 
+            </summary>
+        </member>
+        <member name="M:PO_Project.UsersRanking.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, inicjalizuje nowy obiekt UsersRanking z pustą listą.
+            </summary>
+        </member>
+        <member name="M:PO_Project.UsersRanking.CalculateAndSortTotalProgress">
+            <summary>
+            Metoda oblicza postęp całkowity dla każdego użytkownika w rankingu i sortuje go na podstawie domyślnych kryteriów porównawczych określonych w klasie UserTrainings.
+            </summary>
+        </member>
+        <member name="M:PO_Project.UsersRanking.AddUsTrainings(PO_Project.UserTrainings)">
+            <summary>
+            Metoda dodaje obiekt UserTrainings do rankingu.
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:PO_Project.UsersRanking.ToString">
+            <summary>
+            Przesłonięta metoda ToString() wypisuje informację o treningach użytkownika. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PO_Project.UserTrainings.trainings">
+            <summary>
+            Klasa reprezentuje zestaw treningów przypisanych do danego użytkownika. 
+            </summary>
+        </member>
+        <member name="P:PO_Project.UserTrainings.Trainings">
+            <summary>
+            Właściwość pobiera lub ustawia listę treningów przypisanych do danego użytkownika.
+            </summary>
+        </member>
+        <member name="P:PO_Project.UserTrainings.User">
+            <summary>
+            Właściwość pobiera lub ustawia obiekt User reprezentujący użytkownika, do którego przypisane są treningi.
+            </summary>
+        </member>
+        <member name="M:PO_Project.UserTrainings.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, inicjalizuje nowy obiekt UserTrainings z pustą listą treningów.
+            </summary>
+        </member>
+        <member name="M:PO_Project.UserTrainings.#ctor(PO_Project.User)">
+            <summary>
+            Konstruktor parametryczny, inicjalizuje nowy obiekt UserTrainings z przypisanym użytkownikiem.
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:PO_Project.UserTrainings.AddTraining(PO_Project.Training)">
+            <summary>
+            Metoda AddTraining dodaje trening do listy treningów użytkownika.
+            </summary>
+            <param name="training"></param>
+        </member>
+        <member name="M:PO_Project.UserTrainings.RemoveTraining(PO_Project.Training)">
+            <summary>
+            Metoda RemoveTraining usuwa trening z listy treningów użytkownika.
+            </summary>
+            <param name="training"></param>
+        </member>
+        <member name="M:PO_Project.UserTrainings.CalculateTotalProgress">
+            <summary>
+            Metoda CalculateTotalProgress oblicza całkowity postęp użytkownika na podstawie wyników ćwiczeń we wszystkich treningach.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.CalculateTotalProgressByName(System.String)">
+            <summary>
+            Metoda CalculateTotalProgressByName oblicza całkowity postęp użytkownika w określonym ćwiczeniu na podstawie wyników z tego ćwiczenia we wszystkich treningach.
+            </summary>
+            <param name="exerciseName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.CompareExerciseProgress(PO_Project.UserTrainings,System.String)">
+            <summary>
+            Metoda CompareExerciseProgress porównuje postęp użytkownika w określonym ćwiczeniu z postępem innego użytkownika w tym samym ćwiczeniu.
+            </summary>
+            <param name="otherUserTrainings"></param>
+            <param name="exerciseName"></param>
+        </member>
+        <member name="M:PO_Project.UserTrainings.CalculateTotalCaloriesBurned">
+            <summary>
+            Metoda oblicza łączną ilość spalonych kalorii w wyniku treningów kardio.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.GetTrainingsForUser(PO_Project.User)">
+            <summary>
+            Metoda zwraca listę treningów przypisanych do danego użytkownika.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.ToString">
+            <summary>
+            Metoda ToString zwraca informacje o wszystkich treningach.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.CompareTo(PO_Project.UserTrainings)">
+            <summary>
+            Metoda CompareTo porównuje (malejąco) obecną instancję UserTrainings z inną instancją na podstawie całkowitego postępu.
+            </summary>
+            <param name="other">Inna instancja UserTrainings do porównania.</param>
+            <returns>
+            Wartość mniejsza niż zero, jeśli obecna instancja ma większy całkowity postęp niż instancja other.
+            Wartość równa zero, jeśli obie instancje mają taki sam całkowity postęp.
+            Wartość większa niż zero, jeśli instancja other ma większy całkowity postęp niż obecna instancja.
+            </returns>
+        </member>
+        <member name="M:PO_Project.UserTrainings.GetRankingInfo">
+            <summary>
+            Metoda zwraca informacje do rankingu użytkownika.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
