@@ -44,9 +44,9 @@ If you click the button ,,dodaj,, , a registration window for the trainee will a
 
 ![RegisterWindow](register.png)
 
-##Authors
--Mikołaj Ziółkowski
--Katarzyna Wróbel
--Anna Golak
+## Authors
+- Mikołaj Ziółkowski
+- Katarzyna Wróbel
+- Anna Golak
 
 
