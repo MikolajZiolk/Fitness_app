@@ -39,7 +39,7 @@ In this window, you can manage clients by adding, removing, and sorting them, as
 
 ![MainWindow](main.png)
 
-If you click the button ,,dodaj,, , a registration window for the trainee will appear. In this window you can add the trainee to the list.
+If you click the button ,,dodaj,, , a registration window for the trainee will appear. In this window you can add the trainee to the list. (Below Window with Dark Mode
 
 ![RegisterWindow](register.png)
 
