@@ -37,9 +37,16 @@ Login Window, here you can log in as admin (Login: admin, Password: admin). Usin
 In this window, you can manage clients by adding, removing, and sorting them, as well as view their training history, statistics, and rankings. Below are buttons for adding cardio and strength training sessions, and on the right side, there is an option to save to a .txt file. At the top of the application, there is a button to change the theme and a button to exit the application.
 
 
+
 ![MainWindow](main.png)
 
 If you click the button ,,dodaj,, , a registration window for the trainee will appear. In this window you can add the trainee to the list. (Below Window with Dark Mode
 
 ![RegisterWindow](register.png)
+
+##Authors
+-Mikołaj Ziółkowski
+-Katarzyna Wróbel
+-Anna Golak
+
 
